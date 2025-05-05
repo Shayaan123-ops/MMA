@@ -28,17 +28,21 @@
     nav a:hover {
       color: #e63946;
     }
+
+    /* HERO SECTION */
     .hero {
-      background: url('https://images.unsplash.com/photo-1620590032449-d2a5c5f117a4?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
-      height: 90vh;
+      background-color: #111;
+      padding: 60px 5%;
+    }
+    .hero-content {
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      padding: 0 5%;
+      justify-content: space-between;
       flex-wrap: wrap;
+      gap: 40px;
     }
     .hero-text {
-      max-width: 600px;
+      max-width: 500px;
     }
     .hero-text h2 {
       font-size: 48px;
@@ -57,12 +61,18 @@
       font-weight: bold;
       border-radius: 4px;
     }
-    .hero-image img {
-      max-width: 400px;
-      width: 100%;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+    .hero-image {
+      flex: 1;
+      max-width: 600px;
     }
+    .hero-image img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+    }
+
+    /* SECTION STYLES */
     .section {
       padding: 60px 5%;
       max-width: 1100px;
@@ -78,6 +88,8 @@
       line-height: 1.6;
       margin-bottom: 10px;
     }
+
+    /* TABLE */
     .schedule-table {
       width: 100%;
       border-collapse: collapse;
@@ -95,12 +107,24 @@
     .schedule-table td {
       background-color: #1a1a1a;
     }
+
+    /* FOOTER */
     footer {
       text-align: center;
       padding: 30px 0;
       background-color: #111;
       font-size: 0.9em;
       color: #888;
+    }
+
+    @media (max-width: 900px) {
+      .hero-content {
+        flex-direction: column;
+        text-align: center;
+      }
+      .hero-text, .hero-image {
+        max-width: 100%;
+      }
     }
   </style>
 </head>
@@ -116,13 +140,15 @@
 </header>
 
 <section class="hero">
-  <div class="hero-text">
-    <h2>COACH ZAID</h2>
-    <h3>BJJ & MMA TRAINER – DUBAI</h3>
-    <a href="https://wa.me/971500000000">BOOK A FREE TRIAL</a>
-  </div>
-  <div class="hero-image">
-    <img src="https://cdn.pixabay.com/photo/2016/11/21/15/47/mma-1845636_1280.jpg" alt="MMA Trainer">
+  <div class="hero-content">
+    <div class="hero-text">
+      <h2>COACH ZAID</h2>
+      <h3>BJJ & MMA TRAINER – DUBAI</h3>
+      <a href="https://wa.me/971500000000">BOOK A FREE TRIAL</a>
+    </div>
+    <div class="hero-image">
+      <img src="https://cdn.pixabay.com/photo/2016/11/21/15/47/mma-1845636_1280.jpg" alt="MMA Trainer">
+    </div>
   </div>
 </section>
 
