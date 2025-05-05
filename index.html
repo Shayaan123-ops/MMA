@@ -32,8 +32,10 @@
       background: url('https://images.unsplash.com/photo-1620590032449-d2a5c5f117a4?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
       height: 90vh;
       display: flex;
+      justify-content: space-between;
       align-items: center;
       padding: 0 5%;
+      flex-wrap: wrap;
     }
     .hero-text {
       max-width: 600px;
@@ -54,6 +56,12 @@
       color: white;
       font-weight: bold;
       border-radius: 4px;
+    }
+    .hero-image img {
+      max-width: 400px;
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
     }
     .section {
       padding: 60px 5%;
@@ -112,6 +120,9 @@
     <h2>COACH ZAID</h2>
     <h3>BJJ & MMA TRAINER – DUBAI</h3>
     <a href="https://wa.me/971500000000">BOOK A FREE TRIAL</a>
+  </div>
+  <div class="hero-image">
+    <img src="https://images.unsplash.com/photo-1625476468479-6a74b6a4fa89?auto=format&fit=crop&w=720&q=80" alt="MMA Trainer">
   </div>
 </section>
 
